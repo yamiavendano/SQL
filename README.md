@@ -145,7 +145,7 @@ ALTER TABLE layoffs_staging2
 MODIFY COLUMN `date` DATE;
 
 ----------------------------------------------------------------------------------------------------------------
--- Replace blanks with null
+-- NULL OR BLANK VALUES
 
 SELECT 	*
 FROM layoffs_staging2
@@ -156,7 +156,6 @@ UPDATE layoffs_staging2
 SET industry = NULL
 WHERE industry = '';
 
--- Populate null vales
 
 SELECT *
 FROM layoffs_staging2
@@ -187,7 +186,7 @@ FROM layoffs_staging2;
 
 -------------------------------------------------------------------------------------------------------------
 
---Remove unnecessary columns and rows
+-- REMOVE UNNECESSARY COLUMNS AND ROWS
 
 SELECT 	*
 FROM layoffs_staging2
