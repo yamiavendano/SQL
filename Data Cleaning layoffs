@@ -1,6 +1,6 @@
 # SQL
 
-In this project we take raw world layoffs data and transform it in SQL Server to make it more usable for analysis.
+In this project we take raw world layoffs data and transform it in SQL to make it more usable for analysis
 
 
 SELECT *
